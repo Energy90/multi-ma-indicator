@@ -36,29 +36,29 @@ input ENUM_DRAW_TYPE drawTypeSmma = DRAW_LINE;  //Smoothed Moving Averages
 input ENUM_DRAW_TYPE drawTypeWma = DRAW_LINE;   //Weighted Moving Averages
 
 // moving averages line style
-input ENUM_LINE_STYLE lineStyleSma = STYLE_SOLID;
-input ENUM_LINE_STYLE lineStyleEma = STYLE_SOLID;
-input ENUM_LINE_STYLE lineStyleSmma = STYLE_SOLID;
-input ENUM_LINE_STYLE lineStyleWma = STYLE_SOLID;
+input ENUM_LINE_STYLE lineStyleSma = STYLE_SOLID;  //Line Style SMA
+input ENUM_LINE_STYLE lineStyleEma = STYLE_SOLID;  //Line Style EMA
+input ENUM_LINE_STYLE lineStyleSmma = STYLE_SOLID; //Line Style SMMA
+input ENUM_LINE_STYLE lineStyleWma = STYLE_SOLID;  //Line Style WMA
 
 // moving averages periods and shifts
-input uint sma_period = 10;
-input int sma_shift = 0;
+input uint sma_period = 10;   //SMA Period
+input int sma_shift = 0;   //SMA Shift
 
-input uint ema_period = 10;
-input int ema_shift = 0;
+input uint ema_period = 10;   //EMA Period
+input int ema_shift = 0;   //EMA Shift
 
-input uint smma_period = 10;
-input int smma_shift = 0;
+input uint smma_period = 10;  //SMMA Period
+input int smma_shift = 0;  //SMMA Shift
 
-input uint wma_period = 10;
-input int wma_shift = 0;
+input uint wma_period = 10;   //WMA Period
+input int wma_shift = 0;   //WMA Shift
 
 // moving averages applied prices
-input ENUM_APPLIED_PRICE sma_price = PRICE_CLOSE;
-input ENUM_APPLIED_PRICE ema_price = PRICE_CLOSE;
-input ENUM_APPLIED_PRICE smma_price = PRICE_CLOSE;
-input ENUM_APPLIED_PRICE wma_price = PRICE_CLOSE;
+input ENUM_APPLIED_PRICE sma_price = PRICE_CLOSE;  //SMA Price
+input ENUM_APPLIED_PRICE ema_price = PRICE_CLOSE;  //EMA Price
+input ENUM_APPLIED_PRICE smma_price = PRICE_CLOSE; //SMMA Price
+input ENUM_APPLIED_PRICE wma_price = PRICE_CLOSE;  //WMA Price
 
 // moving averages period handles
 uint sma_p;
